@@ -2,5 +2,27 @@
 
 $hud: #E6CCB2;
 $base: #EDE0D4;
+$letra: #DDB892;
 $boton: #B08968;
 $boton-dng: #7F5539;
+$sombra: 1px 1px 4px black;
+
+@mixin typ600 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+@mixin typ400 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+@mixin typ200 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+@mixin margin($margin,$margin-top) {
+    margin: $margin;
+    margin-top: $margin-top;
+}

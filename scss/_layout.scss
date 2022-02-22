@@ -1,11 +1,33 @@
-// containers, grid
+
 
 body {
-    background-color: $base !important;
+    background-image: url(../img/index.jpg);
+    footer {
+        @include typ400;
+        background-color: $hud;
+        width: 100%;
+        margin-top: 413px;
+    }
 }
 
-footer {
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 400 !important;
-    background-color: $hud !important;
+
+@media screen and (max-width: 480px) {
+    body {
+        background-image: url(../img/index-mobile.jpg);
+    }
+
+    .ftMobile {
+        margin-top: 0px;
+    }
+
+    .titulo {
+        @include margin(auto,400px)
+    }
+}
+
+@media screen and (min-width: 481px) {
+    
+    .ft2 {
+        margin-top: 402px;
+    }
 }

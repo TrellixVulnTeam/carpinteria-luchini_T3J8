@@ -1,20 +1,49 @@
 .navbar {
     background-color: $hud;
     .navbar-brand {
-        font-family: 'Inter', sans-serif;
-        font-weight: 400;
+        @include typ400;
             .nav-link {
-                font-family: 'Inter', sans-serif;
-                font-size: 200;
+                @include typ200;
             }
     }
 }
 
 .btn-primary {
-    background-color: $boton-dng !important;
-    border-color: $boton-dng !important;
+    background-color: $boton-dng;
+    border-color: $boton-dng;
 }
 .btn-secondary {
-    background-color: $boton !important;
-    border-color: $boton !important;
+    background-color: $boton;
+    border-color: $boton;
+}
+
+.titulo {
+    @include margin(auto,250px)
+}
+
+.ft1 {
+    margin-top: 0;
+}
+
+h1 {
+    @include typ600;
+    color: $boton-dng;
+}
+
+h2 {
+    @extend h1;
+    font-weight: 600;
+    color: azure;
+}
+
+p {
+    @extend h2;
+    font-weight: 600;
+    color: black;
+}
+
+span {
+    @extend h1;
+    font-weight: 400;
+    color: black;
 }
